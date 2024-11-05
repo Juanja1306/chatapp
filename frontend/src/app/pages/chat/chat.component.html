@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>Chat-App</h1>
+
+    <div class="user">
+        <input [(ngModel)]="currentUSer" placeholder="Ingrese su usuario aqui">
+    </div>
+
+    <div class="msg-container">
+        @for (msg of messages; track msg) {
+            <div class="messages">
+                <p>{{msg}}</p>
+            </div>
+        }
+    </div>
+
+    <div class="buttons-continer">
+        <input [(ngModel)]="newMessage" placeholder="Escribe un mensaje">
+        <button (click)="sendMessage()">Enviar</button>
+    </div>
+</div>

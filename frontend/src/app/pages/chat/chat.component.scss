@@ -1,0 +1,76 @@
+/* Estilo general de la aplicación de chat */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 400px; /* Ancho del contenedor */
+    height: 500px; /* Altura del contenedor */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    background-color: #f9f9f9; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
+    margin: 20px auto; /* Centrar el contenedor en la página */
+}
+
+/* Estilo del encabezado */
+h1 {
+    text-align: center; /* Centrar el texto */
+    color: #4a90e2; /* Color azul */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilo del contenedor del usuario */
+.user {
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilo del contenedor de mensajes */
+.msg-container {
+    flex: 1; /* Tomar el espacio disponible */
+    overflow-y: auto; /* Scroll vertical si es necesario */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Esquinas redondeadas */
+    background-color: #ffffff; /* Color de fondo blanco */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilo para cada mensaje */
+.messages {
+    margin: 5px 0; /* Margen arriba y abajo */
+}
+
+.messages p {
+    background-color: #e1f5fe; /* Color de fondo del mensaje */
+    border-radius: 5px; /* Esquinas redondeadas */
+    padding: 8px; /* Espaciado interno */
+    margin: 0; /* Sin margen */
+}
+
+/* Estilo del contenedor de botones */
+.buttons-continer {
+    display: flex; /* Mostrar en línea */
+}
+
+/* Estilo del campo de entrada de nuevo mensaje */
+.buttons-continer input {
+    flex: 1; /* Ocupa el espacio disponible */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Esquinas redondeadas */
+    margin-right: 5px; /* Margen derecho */
+}
+
+/* Estilo del botón de enviar */
+.buttons-continer button {
+    padding: 10px; /* Espaciado interno */
+    background-color: #4a90e2; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+.buttons-continer button:hover {
+    background-color: #357ab8; /* Color de fondo al pasar el ratón */
+}
